@@ -19,8 +19,6 @@
     $IOS_PLATFORM =  $json0_newsinfo -> GAME_INFO[0] -> IOS_PLATFORM;
     $ANDROID_PLATFORM =  $json0_newsinfo -> GAME_INFO[0] -> ANDROID_PLATFORM;
 
-
-
 ?>
 
 <div class="row">
@@ -34,13 +32,7 @@
                     <div class="card">
                     <h3><?= esc($MOFANGNEWSTITLE);?></h3>
                     </div>
-                <!-- </div>
-            </div>
-        </div>
 
-        <div class="col-sm-10">
-            <div class="row">
-                <div class="col-sm-12"> -->
                     <div class="card">
                         <?php print($MOFANGCONNET); ?>
                     </div>

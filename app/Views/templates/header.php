@@ -13,9 +13,6 @@
     <title><?php if($title =='Home'){$title='首頁';}elseif($title =='About'){$title='關於';}else{}?><?= esc($title) ?></title>
 </head>
 <body>
-
-<!-- <a href="../home">Home</a> | <a href="news">NEWS</a> | <a href="about">About</a> -->
-
 <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
   <!-- Navbar content -->
   <div class="container-fluid">
