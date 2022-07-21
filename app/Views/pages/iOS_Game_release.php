@@ -4,7 +4,7 @@
     </div>
     <div class="col-sm-10">
         <div class="row">
-            <h3>iOS遊戲</h3>
+            <h3>iOS遊戲 - 發售日期 </h3>
         </div>
     </div>
 </div>
@@ -23,13 +23,13 @@
                 <div class="card">
                     <div class="card-body">
                         <?php
-                            $GAME_ID = $json0_iOS -> results[$A] -> GAME_ID;
-                            $GAME_NAME = $json0_iOS -> results[$A] -> GAME_NAME;
-                            $GAME_RELEASE_DATE = $json0_iOS -> results[$A] -> GAME_RELEASE_DATE;
-                            $GAME_IMG = $json0_iOS -> results[$A] -> GAME_IMG;
-                            $LABLE = $json0_iOS -> results[$A] -> LABLE;
-                            $IOS_PLATFORM = $json0_iOS -> results[$A] -> IOS_PLATFORM;
-                            $ANDROID_PLATFORM = $json0_iOS -> results[$A] -> ANDROID_PLATFORM;
+                            $GAME_ID = $json0_iOS_release -> results[$A] -> GAME_ID;
+                            $GAME_NAME = $json0_iOS_release -> results[$A] -> GAME_NAME;
+                            $GAME_RELEASE_DATE = $json0_iOS_release -> results[$A] -> GAME_RELEASE_DATE;
+                            $GAME_IMG = $json0_iOS_release -> results[$A] -> GAME_IMG;
+                            $LABLE = $json0_iOS_release -> results[$A] -> LABLE;
+                            $IOS_PLATFORM = $json0_iOS_release -> results[$A] -> IOS_PLATFORM;
+                            $ANDROID_PLATFORM = $json0_iOS_release -> results[$A] -> ANDROID_PLATFORM;
                             print('<a href=../gameinfo/'.$GAME_ID.' >');
                             print('<img src='.$GAME_IMG.' width = "100%">');
                             print('<br><h5>'.$GAME_NAME.'</h5>');

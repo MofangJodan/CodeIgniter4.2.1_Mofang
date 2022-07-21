@@ -27,7 +27,14 @@
           <a class="nav-link" href="../iOS_Game">iOS遊戲</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link" href="../iOS_Game_release">iOS遊戲 - 發售日期</a>
+        </li>
+
+        <li class="nav-item">
           <a class="nav-link" href="../Android_Game">Android遊戲</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="../Android_Game_release">Android遊戲-發售日期</a>
         </li>
       </ul>
     </div>

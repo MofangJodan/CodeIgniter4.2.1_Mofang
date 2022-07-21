@@ -45,7 +45,8 @@ class Pages extends Controller
     // 新聞內文
 
     // 新聞內文
-    //iOS遊戲卡
+
+    //iOS遊戲卡片
     $url0_iOS="https://api.mofang.com.tw/platform.php?hotsch=";
     $ZZ_iOS='最近更新';
     $ZZA2=rawurlencode($ZZ_iOS);
@@ -54,9 +55,9 @@ class Pages extends Controller
     $json0_iOS= json_decode($json0_iOS);
     $data['json0_iOS']= $json0_iOS;
     // print($json0_iOS);
-    //iOS遊戲卡
+    //iOS遊戲卡片
 
-    //iOS遊戲卡
+    //Android遊戲卡片
     $url0_Android="https://api.mofang.com.tw/platform.php?hotsch=";
     $ZZ_Android='最近更新';
     $ZZA3=rawurlencode($ZZ_Android);
@@ -65,7 +66,29 @@ class Pages extends Controller
     $json0_Android= json_decode($json0_Android);
     $data['json0_Android']= $json0_Android;
     // print($json0_iOS);
-    //Android遊戲卡
+    //Android遊戲卡片
+
+//iOS遊戲卡片
+$url0_iOS_release = "https://api.mofang.com.tw/platform.php?hotsch=";
+$ZZ_iOS_release = '發售日期';
+$ZZA2_release = rawurlencode($ZZ_iOS_release);
+$ZZA2_release = $url0_iOS_release.$ZZA2_release.'&platform=ios&store';
+$json0_iOS_release = file_get_contents($ZZA2_release);
+$json0_iOS_release = json_decode($json0_iOS_release);
+$data['json0_iOS_release'] = $json0_iOS_release;
+// print($json0_iOS);
+//iOS遊戲卡片
+
+//Android遊戲卡片
+$url0_Android_release = "https://api.mofang.com.tw/platform.php?hotsch=";
+$ZZ_Android_release ='發售日期';
+$ZZA3_release = rawurlencode($ZZ_Android_release);
+$ZZA3_release = $url0_Android_release.$ZZA3_release.'&platform=android&store';
+$json0_Android_release = file_get_contents($ZZA3_release);
+$json0_Android_release = json_decode($json0_Android_release);
+$data['json0_Android_release'] = $json0_Android_release;
+// print($json0_iOS);
+//Android遊戲卡片
 
         echo view('templates/header', $data);
         echo view('pages/'.$page, $data);

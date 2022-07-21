@@ -34,40 +34,40 @@ $Officialwebsite = $json0_gameinfo1 -> results -> Officialwebsite;
                 <div class="col-sm-12">
                     <div class="card">
                         <img src= <?php print($LOGO);?> width="20%">
-                    <?php print($GAME_NAME);?>
+                    <b><?php print($GAME_NAME);?></b>
                     </div>
                 </div>
         </div>
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-sm-6">
                     <div class="card">
                         <div class="card-body">
                             <img src= <?php print($PIC0);?> width=100%>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-6">
                     <div class="card">
                         <div class="card-body">
                             <img src= <?php print($PIC1);?> width=100%>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-6">
                     <div class="card">
                         <div class="card-body">
                             <img src= <?php print($PIC2);?> width=100%>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-6">
                     <div class="card">
                         <div class="card-body">
                             <img src= <?php print($PIC3);?> width=100%>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-6">
                     <div class="card">
                         <div class="card-body">
                             <img src= <?php print($PIC4);?> width=100%>
@@ -79,7 +79,9 @@ $Officialwebsite = $json0_gameinfo1 -> results -> Officialwebsite;
             <div class="row">
                 <div class="col-sm-12">                
                     <?php print($GAME_INFO);?>
+                    <?php if($Officialwebsite != ''){?>
                         <a href=<?php print($Officialwebsite); ?>><b>官網</b></a>
+                        <?php } else{} ?>
                 </div>
             </div>
 <!-- 遊戲相關新聞 -->
