@@ -44,7 +44,29 @@ class Pages extends Controller
     //最近更新
     // 新聞內文
 
-    // 新聞內文     
+    // 新聞內文
+    //iOS遊戲卡
+    $url0_iOS="https://api.mofang.com.tw/platform.php?hotsch=";
+    $ZZ_iOS='最近更新';
+    $ZZA2=rawurlencode($ZZ_iOS);
+    $ZZA2=$url0_iOS.$ZZA2.'&platform=ios&store';
+    $json0_iOS = file_get_contents($ZZA2);
+    $json0_iOS= json_decode($json0_iOS);
+    $data['json0_iOS']= $json0_iOS;
+    // print($json0_iOS);
+    //iOS遊戲卡
+
+    //iOS遊戲卡
+    $url0_Android="https://api.mofang.com.tw/platform.php?hotsch=";
+    $ZZ_Android='最近更新';
+    $ZZA3=rawurlencode($ZZ_Android);
+    $ZZA3=$url0_Android.$ZZA3.'&platform=android&store';
+    $json0_Android = file_get_contents($ZZA3);
+    $json0_Android= json_decode($json0_Android);
+    $data['json0_Android']= $json0_Android;
+    // print($json0_iOS);
+    //Android遊戲卡
+
         echo view('templates/header', $data);
         echo view('pages/'.$page, $data);
         echo view('templates/footer', $data);
