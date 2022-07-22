@@ -11,7 +11,7 @@ class Pages extends Controller
             $this->load->model('customers_model');
             $data['customer'] = $this->customers_model->get_customer(3);
             $this->load->view('welcome_message',$data);
-    }
+        }
 
     public function view($page = 'home')
     {
