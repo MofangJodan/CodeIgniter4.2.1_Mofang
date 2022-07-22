@@ -10,11 +10,13 @@ $LOGO = $json0_gameinfo1 -> results -> LOGO;
 $GAME_NAME = $json0_gameinfo1 -> results -> GAME_NAME;
 $GAME_INFO = $json0_gameinfo1 -> results -> GAME_INFO;
 $LOGO = $json0_gameinfo1 -> results -> LOGO;
+$Video = $json0_gameinfo1 -> results -> Video;
 $PIC0 = $json0_gameinfo1 -> results -> PIC0;
 $PIC1 = $json0_gameinfo1 -> results -> PIC1;
 $PIC2 = $json0_gameinfo1 -> results -> PIC2;
 $PIC3 = $json0_gameinfo1 -> results -> PIC3;
 $PIC4 = $json0_gameinfo1 -> results -> PIC4;
+$PIC5 = $json0_gameinfo1 -> results -> PIC5;
 $Develope = $json0_gameinfo1 -> results -> Develope;
 $GAME_RELEASE_DATE = $json0_gameinfo1 -> results -> GAME_RELEASE_DATE;
 $IOS_Pay = $json0_gameinfo1 -> results -> IOS_Pay;
@@ -39,6 +41,16 @@ $Officialwebsite = $json0_gameinfo1 -> results -> Officialwebsite;
                 </div>
         </div>
             <div class="row">
+                <?php if($Video != ''){ ?>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src= <?php print($Video);?> width=100%>
+                        </div>
+                    </div>
+                </div>
+                <?php }?>
+
                 <div class="col-sm-6">
                     <div class="card">
                         <div class="card-body">
@@ -46,6 +58,7 @@ $Officialwebsite = $json0_gameinfo1 -> results -> Officialwebsite;
                         </div>
                     </div>
                 </div>
+                
                 <div class="col-sm-6">
                     <div class="card">
                         <div class="card-body">
@@ -60,6 +73,7 @@ $Officialwebsite = $json0_gameinfo1 -> results -> Officialwebsite;
                         </div>
                     </div>
                 </div>
+                <?php if ($PIC3 !=''){?>
                 <div class="col-sm-6">
                     <div class="card">
                         <div class="card-body">
@@ -67,6 +81,8 @@ $Officialwebsite = $json0_gameinfo1 -> results -> Officialwebsite;
                         </div>
                     </div>
                 </div>
+                <?php }else{} ?>
+<?php if ($PIC4 !=''){?>
                 <div class="col-sm-6">
                     <div class="card">
                         <div class="card-body">
@@ -74,6 +90,16 @@ $Officialwebsite = $json0_gameinfo1 -> results -> Officialwebsite;
                         </div>
                     </div>
                 </div>
+<?php }else{} ?>
+<?php if ($PIC5 !=''){?>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src= <?php print($PIC5);?> width=100%>
+                        </div>
+                    </div>
+                </div>
+<?php }else{} ?>
             </div>
 
             <div class="row">

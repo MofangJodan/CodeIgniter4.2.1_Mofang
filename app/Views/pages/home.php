@@ -25,7 +25,10 @@
                           <?php print $BANNER_TITLE = $json0 -> results[0] -> BANNER_TITLE;?>
                       </p>
                       </a>             
-                  </div>          
+                  </div>
+                  <div class="card-footer">
+                  <?php echo $BANNER_TITLE = $json0 -> results[0] -> BANNER_TITLE;?>
+                </div>          
                   <?php
                       for ($a=1;$a<5;$a++)
                       {
