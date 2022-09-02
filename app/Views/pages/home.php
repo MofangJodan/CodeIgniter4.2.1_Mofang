@@ -1,4 +1,5 @@
-  <div class="row">
+
+<div class="row">
     <div class="col-sm-1">
 
     </div>
@@ -155,12 +156,6 @@
           <?php }?>
         </div>
       </div>
-
-
-
-
     </div>
-
   </div>
-
 
