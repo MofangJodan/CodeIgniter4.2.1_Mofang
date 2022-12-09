@@ -13,30 +13,5 @@
     <title><?php if($title =='Home'){$title='首頁';}elseif($title =='About'){$title='關於';}else{}?><?= esc($title) ?></title>
 </head>
 <body>
-<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
-<nav class="navbar navbar-dark bg-primary">
 
-  <div class="container-fluid">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-      <a class="navbar-brand" href="../home">首頁</a>
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link" href="../iOS_Game">iOS遊戲</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../iOS_Game_release">iOS遊戲 - 發售日期</a>
-        </li>
 
-        <li class="nav-item">
-          <a class="nav-link" href="../Android_Game">Android遊戲</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../Android_Game_release">Android遊戲-發售日期</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>

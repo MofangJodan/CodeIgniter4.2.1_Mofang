@@ -54,7 +54,7 @@ class Pages extends Controller
     $json0_iOS = file_get_contents($ZZA2);
     $json0_iOS= json_decode($json0_iOS);
     $data['json0_iOS']= $json0_iOS;
-    // print($json0_iOS);
+
     //iOS遊戲卡片
 
     //Android遊戲卡片
@@ -65,7 +65,7 @@ class Pages extends Controller
     $json0_Android = file_get_contents($ZZA3);
     $json0_Android= json_decode($json0_Android);
     $data['json0_Android']= $json0_Android;
-    // print($json0_iOS);
+
     //Android遊戲卡片
 
 //iOS遊戲卡片
@@ -76,7 +76,7 @@ $ZZA2_release = $url0_iOS_release.$ZZA2_release.'&platform=ios&store';
 $json0_iOS_release = file_get_contents($ZZA2_release);
 $json0_iOS_release = json_decode($json0_iOS_release);
 $data['json0_iOS_release'] = $json0_iOS_release;
-// print($json0_iOS);
+
 //iOS遊戲卡片
 
 //Android遊戲卡片
@@ -87,7 +87,7 @@ $ZZA3_release = $url0_Android_release.$ZZA3_release.'&platform=android&store';
 $json0_Android_release = file_get_contents($ZZA3_release);
 $json0_Android_release = json_decode($json0_Android_release);
 $data['json0_Android_release'] = $json0_Android_release;
-// print($json0_iOS);
+
 //Android遊戲卡片
 
         echo view('templates/header', $data);

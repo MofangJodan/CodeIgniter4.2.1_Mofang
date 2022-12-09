@@ -64,64 +64,7 @@
           </div>
         </div>
       <!-- 左邊BANNER END -->
-      <!-- 右邊BANNER START -->
-        <div class="col-sm-4">
-          <div class="card">
-              <div id="carouselExampleCaptionsR" class="carousel slide" data-ride="carousel">
-                  <div class="carousel-inner">          
-                    <div class="carousel-item active">
-                    <?php $WEB_IN = $json0_r -> results[0] -> WEB_IN;
-                        if($WEB_IN == 'true'){
-                          $PUSH_URL= $json0_r -> results[0] -> PUSH_URL; 
-                        }else{
-                          $PUSH_URL= $json0_r -> results[0] -> PUSH_URL;
-                          $PUSH_URL.' target=_blank>';
-                        }
-                    ?>
-                    <a href=<?= esc($PUSH_URL)?> >
-                    <img src="<?php  print $PUSH_IMG = $json0_r -> results[0] -> PUSH_IMG;?>"" class="d-block w-100" alt="...">
-                        <p>                
-                            <?php print $PUSH_TITLE = $json0_r -> results[0] -> PUSH_TITLE;?>
-                        </p>
-                        </a>             
-                    </div>          
-                    <?php
-                        for ($aa=1;$aa<5;$aa++)
-                        {
-                          $WEB_IN = $json0_r -> results[$aa] -> WEB_IN;
-                          $PUSH_TITLE = $json0_r -> results[$aa] -> PUSH_TITLE;
-                          $PUSH_IMG = $json0_r -> results[$aa] -> PUSH_IMG;
-                          $PUSH_URL= $json0_r -> results[$aa] -> PUSH_URL;
-                    ?>
-                          <div class=carousel-item>
-                    <?php
-                          if($WEB_IN == 'true'){
-                              $PUSH_URL1= '<a href='.$PUSH_URL.' >';
-                              $PUSH_IMGS= '<img src='.$PUSH_IMG.' class=d-block w-100>';
-                          }else{    
-                              $PUSH_URL1='<a href='.$PUSH_URL.' target=_blank>';
-                              $PUSH_IMGS='<img src='.$PUSH_IMG.' class=d-block w-100>';
-                          }
-                    ?>
-                    <a href=<?=  esc($PUSH_URL)?>><img src=<?= esc($PUSH_IMG)?> class="d-block w-100">
-                          <p><?= esc($PUSH_TITLE) ?></a>
-                    </div>
-                    <?php
-                        }
-                        ?>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptionsR" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptionsR" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                  </button>
-              </div>
-            </div>            
-        </div>
-      <!-- 右邊BANNER END -->
+
       </div>
 
       <div class="col-sm-11">
